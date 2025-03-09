@@ -44,6 +44,11 @@
             key-positions = <11 12 13>;
             bindings = <&tog TVP1>;
         };
+
+        raycast {
+            bindings = <&raycast>;
+            key-positions = <2 3>;
+        };
     };
 
     macros {
@@ -60,6 +65,14 @@
                 <&kp LSHFT>,
                 <&macro_tap>,
                 <&kp G &kp I &kp F>;
+        };
+
+        raycast: raycast {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_release>, <&kp LEFT_COMMAND &kp SPACE>;
+
+            label = "RAYCAST";
         };
     };
 
