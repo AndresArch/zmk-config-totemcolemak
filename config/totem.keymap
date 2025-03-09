@@ -70,7 +70,7 @@
         raycast: raycast {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_release>, <&kp LEFT_COMMAND &kp SPACE>;
+            bindings = <&macro_tap>, <&kp LEFT_COMMAND &kp SPACE>;
 
             label = "RAYCAST";
         };
