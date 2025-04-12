@@ -104,10 +104,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &kp Q       &kp W         &kp F          &kp P        &kp G        &kp J      &kp L        &kp U        &kp Y       &sk LEFT_SHIFT
-              &mt LGUI A  &mt LALT R    &mt LCTRL S    &kp T        &kp D        &kp H      &mt RSHFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O
-&sk LEFT_ALT  &kp Z       &mt K_COPY X  &mt K_PASTE C  &kp V        &kp B        &kp K      &kp M        &kp COMMA    &kp DOT     &kp FSLH        &kp ENTER
-                                        &kp DEL        &lt NAV TAB  &kp SPACE    &kp SPACE  &lt SYM ESC  &kp BSPC
+              &kp Q  &kp W               &kp F        &kp P        &kp G        &kp J      &kp L        &kp U        &kp Y       &sk LEFT_SHIFT
+              &kp A  &mt LALT R          &mt LCTRL S  &kp T        &kp D        &kp H      &mt RSHFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O
+&sk LEFT_ALT  &kp Z  &mt LEFT_COMMAND X  &mt COLON C  &kp V        &kp B        &kp K      &kp M        &kp COMMA    &kp DOT     &kp FSLH        &kp ENTER
+                                         &kp DEL      &lt NAV TAB  &kp SPACE    &kp SPACE  &lt SYM ESC  &kp BSPC
             >;
         };
 
@@ -156,10 +156,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL     &kp AT       &kp HASH   &kp DLLR  &kp PRCNT       &kp CARET     &kp AMPS        &kp RA(U)   &kp SQT     &kp DQT
-        &kp RA(A)    &trans       &kp RA(S)  &trans    &kp QUESTION    &kp C_MUTE    &kp LS(RA(N4))  &kp RA(N5)  &kp RA(N4)  &kp RA(O)
-&trans  &kp RA(F18)  &kp RA(F19)  &trans     &trans    &trans          &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PREV  &kp C_NEXT  &kp BSLH   &trans
-                                  &trans     &gif      &mo ADJ         &trans        &kp C_PP        &trans
+        &kp EXCL     &kp AT       &kp HASH   &kp DLLR          &kp PRCNT           &kp CARET     &kp AMPS        &kp RA(U)   &kp SQT     &kp DQT
+        &kp RA(A)    &trans       &kp RA(S)  &kp K_PLAY_PAUSE  &kp QUESTION        &kp C_MUTE    &kp LS(RA(N4))  &kp RA(N5)  &kp RA(N4)  &kp RA(O)
+&trans  &kp RA(F18)  &kp RA(F19)  &trans     &kp LESS_THAN     &kp GREATER_THAN    &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PREV  &kp C_NEXT  &kp BSLH   &trans
+                                  &trans     &gif              &mo ADJ             &trans        &kp C_PP        &trans
             >;
         };
 
@@ -238,6 +238,15 @@
         &trans       &kp LS(LEFT)  &kp LC(F17)   &kp LS(RIGHT)  &kp RET        &trans  &kp F4  &kp F5  &kp F6  &kp F11
 &trans  &kp J        &kp LS(C)     &kp LC(F16)   &kp LS(V)      &kp LC(F15)    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                                    &trans        &kp LC(F12)    &kp LC(F11)    &trans  &trans  &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
