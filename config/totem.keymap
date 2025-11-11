@@ -142,10 +142,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp Q               &kp W       &kp F             &kp P          &kp G                     &kp J      &kp L        &kp U              &kp Y       &sk LEFT_SHIFT
-         &mt LEFT_COMMAND A  &mt LALT R  &mt LEFT_SHIFT S  &mt LCTRL T    &kp D                     &kp H      &mt RCTRL N  &mt RIGHT_SHIFT E  &mt RALT I  &mt RIGHT_COMMAND O
-&kp RET  &kp Z               &kp X       &kp C             &kp V          &kp B                     &kp K      &kp M        &kp COMMA          &kp DOT     &kp FSLH             &kp ENTER
-                                         &kp TAB           &kp BACKSPACE  &mt LEFT_COMMAND SPACE    &kp ENTER  &lt SYM ESC  &kp BSPC
+         &kp Q               &kp W       &kp F             &kp P            &kp G                     &kp J      &kp L        &kp U              &kp Y       &sk LEFT_SHIFT
+         &mt LEFT_COMMAND A  &mt LALT R  &mt LEFT_SHIFT S  &mt LCTRL T      &kp D                     &kp H      &mt RCTRL N  &mt RIGHT_SHIFT E  &mt RALT I  &mt RIGHT_COMMAND O
+&kp RET  &kp Z               &kp X       &kp C             &kp V            &kp B                     &kp K      &kp M        &kp COMMA          &kp DOT     &kp FSLH             &kp ENTER
+                                         &kp TAB           &lt 1 BACKSPACE  &mt LEFT_COMMAND SPACE    &kp ENTER  &lt SYM ESC  &kp BSPC
             >;
         };
 
