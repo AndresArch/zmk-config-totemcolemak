@@ -15,3 +15,18 @@
         , <&xiao_d 8 GPIO_ACTIVE_HIGH>
         ;
 };
+
+/ {
+    chosen {
+        zmk,battery = &battery;
+    };
+
+    battery: battery {
+        compatible = "zmk,battery-voltage-divider";
+        io-channels = <&adc 0>;  // A0 on Seeed XIAO BLE
+        output-ohms = <1000000>; // 1MΩ resistor (top)
+        full-ohms = <220000>;    // 220kΩ resistor (bottom)
+        min-mv = <3300>;         // 3.3V = empty
+        max-mv = <4200>;         // 4.2V = full
+    };
+};
