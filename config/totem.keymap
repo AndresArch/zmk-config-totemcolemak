@@ -167,7 +167,7 @@
             bindings = <
          &kp Q               &kp W       &kp F             &kp P            &kp G          &kp J      &kp L        &kp U              &kp Y       &sk LEFT_SHIFT
          &mt LEFT_COMMAND A  &mt LALT R  &mt LEFT_SHIFT S  &mt LCTRL T      &kp D          &kp H      &mt RCTRL N  &mt RIGHT_SHIFT E  &mt RALT I  &mt RIGHT_COMMAND O
-&kp RET  &kp Z               &kp X       &kp C             &kp V            &kp B          &kp K      &kp M        &kp COMMA          &kp DOT     &kp FSLH             &aero_on 1
+&kp RET  &kp Z               &kp X       &kp C             &kp V            &kp B          &kp K      &kp M        &kp COMMA          &kp DOT     &kp FSLH             &tog 1
                                          &kp TAB           &lt 4 BACKSPACE  &lt 2 SPACE    &kp ENTER  &lt 3 ESC    &kp BSPC
             >;
         };
@@ -177,7 +177,7 @@
             bindings = <
         &kp COLON  &kp SEMI   &kp UP        &kp EQUAL   &kp LBRC    &kp RBRC     &kp KP_N7  &kp KP_N8       &kp KP_N9  &kp KP_PLUS
         &kp LSHFT  &kp LEFT   &kp LEFT_ALT  &kp LSHIFT  &none       &kp RBKT     &kp KP_N4  &kp KP_N5       &kp KP_N6  &kp KP_MINUS
-&trans  &kp DEL    &kp PG_UP  &kp CAPS      &kp PG_DN   &kp LPAR    &kp RPAR     &kp KP_N1  &kp KP_N2       &kp KP_N3  &kp KP_MULTIPLY  &aerospace 0
+&trans  &kp DEL    &kp PG_UP  &kp CAPS      &kp PG_DN   &kp LPAR    &kp RPAR     &kp KP_N1  &kp KP_N2       &kp KP_N3  &kp KP_MULTIPLY  &tog 0
                               &trans        &trans      &trans      &aero_off 0  &kp KP_N0  &studio_unlock
             >;
         };
