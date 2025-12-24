@@ -45,11 +45,6 @@
             bindings = <&tog 5>;
         };
 
-        raycast {
-            bindings = <&raycast>;
-            key-positions = <2 3>;
-        };
-
         homerowSearch {
             bindings = <&homerowSearch>;
             key-positions = <12 13>;
