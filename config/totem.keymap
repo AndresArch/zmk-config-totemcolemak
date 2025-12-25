@@ -141,6 +141,15 @@
             #binding-cells = <1>;
             toggle-mode = "off";
         };
+
+        aerospacehold: aerospacehold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AEROSPACEHOLD";
+            bindings = <&tog>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
@@ -165,20 +174,20 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp Q               &kp W       &kp F             &kp P            &kp G          &kp J      &kp L        &kp U              &kp Y       &sk LEFT_SHIFT
-         &mt LEFT_COMMAND A  &mt LALT R  &mt LEFT_SHIFT S  &mt LCTRL T      &kp D          &kp H      &mt RCTRL N  &mt RIGHT_SHIFT E  &mt RALT I  &mt RIGHT_COMMAND O
-&kp RET  &kp Z               &kp X       &kp C             &kp V            &kp B          &kp K      &kp M        &kp COMMA          &kp DOT     &kp FSLH             &tog 1
-                                         &kp TAB           &lt 4 BACKSPACE  &lt 2 SPACE    &kp ENTER  &lt 3 ESC    &kp BSPC
+         &kp Q               &kp W       &kp F             &kp P            &kp G                     &kp J      &kp L        &kp U              &kp Y       &kp SEMI
+         &mt LEFT_COMMAND A  &mt LALT R  &mt LEFT_SHIFT S  &mt LCTRL T      &kp D                     &kp H      &mt RCTRL N  &mt RIGHT_SHIFT E  &mt RALT I  &mt RIGHT_COMMAND O
+&kp RET  &kp Z               &kp X       &kp C             &kp V            &kp B                     &kp K      &kp M        &kp COMMA          &kp DOT     &kp FSLH             &tog 1
+                                         &kp TAB           &lt 2 BACKSPACE  &aerospacehold 1 SPACE    &kp ENTER  &lt 3 ESC    &kp BSPC
             >;
         };
 
         aerospace {
             label = "aerospace";
             bindings = <
-        &kp COLON  &kp SEMI   &kp UP        &kp EQUAL   &kp LBRC    &kp RBRC  &kp N7        &kp N8          &kp N9        &kp KP_PLUS
-        &kp LSHFT  &kp LEFT   &kp LEFT_ALT  &kp LSHIFT  &none       &kp RBKT  &kp NUMBER_4  &kp N5          &kp NUMBER_6  &kp KP_MINUS
-&trans  &kp DEL    &kp PG_UP  &kp CAPS      &kp PG_DN   &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &kp KP_MULTIPLY  &tog 1
-                              &trans        &trans      &trans      &tog 1    &kp KP_N0     &studio_unlock
+        &kp COLON  &kp SEMI   &kp UP        &kp EQUAL   &kp LBRC       &kp RBRC  &kp N7        &kp N8          &kp N9        &kp KP_PLUS
+        &kp LSHFT  &kp LEFT   &kp LEFT_ALT  &kp LSHIFT  &movewindow    &kp RBKT  &kp NUMBER_4  &kp N5          &kp NUMBER_6  &kp KP_MINUS
+&trans  &kp DEL    &kp PG_UP  &kp CAPS      &kp PG_DN   &kp LPAR       &kp RPAR  &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &kp KP_MULTIPLY  &tog 1
+                              &trans        &trans      &trans         &tog 1    &kp KP_N0     &studio_unlock
             >;
         };
 
