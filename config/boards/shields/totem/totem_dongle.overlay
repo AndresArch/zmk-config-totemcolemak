@@ -1,10 +1,8 @@
+#include "totem.dtsi"
+
 / {
     chosen {
         zmk,kscan = &kscan0;
-    };
-
-    kscan0: kscan_0 {
-        compatible = "zmk,kscan-mock";
-        events = <0>;
+        zmk,matrix-transform = &totem_transform;
     };
 };
