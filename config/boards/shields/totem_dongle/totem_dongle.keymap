@@ -1,0 +1,8 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    chosen {
+        zmk,matrix-transform = &totem_transform;
+    };
+};
