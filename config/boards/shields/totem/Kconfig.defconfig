@@ -18,8 +18,6 @@ config ZMK_DISPLAY
 config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
     default y
 
-config ZMK_STUDIO
-    default y
 
 
 
