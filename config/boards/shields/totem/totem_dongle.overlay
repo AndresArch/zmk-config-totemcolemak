@@ -14,7 +14,7 @@
         zmk,physical-layout = &default_layout;
     };
 
-    mock_kscan: kscan_0 {
+    mock_kscan: mock-kscan_1 {
         compatible = "zmk,kscan-mock";
         columns = <0>;
         rows = <0>;
@@ -66,4 +66,13 @@
             , <&key_physical_attrs 105 100 1003  371       0    0    0>
             ;
     };
+};
+
+&kscan0 {
+    compatible = "zmk,kscan-mock";
+    /delete-property/ diode-direction;
+    /delete-property/ row-gpios;
+    columns = <0>;
+    rows = <0>;
+    events = <0>;
 };
