@@ -2,12 +2,12 @@ include:
   - board: xiao_ble//zmk
     shield: totem_left
     # Add the -DCONFIG flags below to disable Studio/Layouts on the peripheral
-    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_STUDIO=n -DCONFIG_ZMK_PHYSICAL_LAYOUT_TABLE=n
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_STUDIO=n
 
   - board: xiao_ble//zmk
     shield: totem_right
     # Add the same -DCONFIG flags here
-    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_STUDIO=n -DCONFIG_ZMK_PHYSICAL_LAYOUT_TABLE=n
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_STUDIO=n
 
   - board: xiao_ble//zmk
     shield: totem_dongle prospector_adapter
